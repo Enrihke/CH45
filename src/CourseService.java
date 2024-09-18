@@ -31,12 +31,18 @@ public class CourseService{
     }//unEnrollStudent
 
     public void displayCourseInformation(String courseId){
-    	System.out.println("");
+    	Course course= courses.get(courseId);
+    	System.out.println("course");
         //TODO implement so it shows the course name, id and credits
     }//displayCourseInformation
 
     public void displayStudentInformation(String studentId){
-    	Student objStudent1 = new student();
+    	Student student=students.get(studentId);
+    	if(student!=null) {
+    		System.out.println(student);
+    	}else {
+    		System.out.println(student.toString());
+    	}
         //TODO implement so it shows the student name, id and list of enrolled courses
     }//displayStudentInformation
 

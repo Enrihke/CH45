@@ -10,7 +10,7 @@ public class Main
         courseService.displayCourseInformation( courseId );
         courseService.displayStudentInformation( studentId);
 
-        courseService.enrollStudent( studentId, courseId );
+        courseService.enrollStudent( "Peter", "Arts 1" );
         courseService.displayStudentInformation( studentId);
 
         courseService.unEnrollStudent( studentId, courseId );
